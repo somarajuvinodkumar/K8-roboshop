@@ -1,5 +1,5 @@
 ---
-apiVersion: apps/v1
+apiVersion: v1
 kind: Secret
 metadata:
   name: mysql
@@ -40,7 +40,7 @@ spec:
         - name: mysql
           image: vinodkumar9618/mysql:v1
           envFrom:
-            - SecretRef:
+            - secretRef:
                 name: mysql
 
 ---
