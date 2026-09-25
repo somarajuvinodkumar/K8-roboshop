@@ -52,12 +52,12 @@ metadata:
   namespace: roboshop
   labels:
     component: cart
-    projcet: roboshop
+    project: roboshop
     tier: app
 spec:
   selector:
     component: cart
-    projcet: roboshop
+    project: roboshop
     tier: app
   ports:
     - protocol: TCP
