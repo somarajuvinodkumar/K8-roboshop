@@ -57,7 +57,7 @@ spec:
   selector:
     component: mysql
     projcet: roboshop
-    tier: roboshop
+    tier: database
   ports:
     - protocol: TCP
       port: 3306
