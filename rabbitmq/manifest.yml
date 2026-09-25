@@ -6,7 +6,7 @@ metadata:
   namespace: roboshop
   labels:
     component: rabbitmq
-    projcet: roboshop
+    project: roboshop
     tier: database
 type: Opaque
 data:
@@ -21,20 +21,20 @@ metadata:
   namespace: roboshop
   labels:
     component: rabbitmq
-    projcet: roboshop
+    project: roboshop
     tier: database
 spec:
   replicas: 1
   selector:
     matchLabels:
       component: rabbitmq
-      projcet: roboshop
+      project: roboshop
       tier: database
   template:
     metadata:
       labels:
         component: rabbitmq
-        projcet: roboshop
+        project: roboshop
         tier: database
     spec:
         containers:
