@@ -40,8 +40,8 @@ spec:
         - name: shipping
           image: vinodkumar9618/shipping:v1
           envFrom:
-            - configMapRef: null
-              name: shipping
+            - configMapRef:
+                name: shipping
 
 ---
 apiVersion: v1
