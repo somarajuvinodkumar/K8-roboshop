@@ -14,6 +14,7 @@ data:
   CATALOGUE_PORT: "8080"
 
 ---
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,29 +22,28 @@ metadata:
   namespace: roboshop
   labels:
     component: cart
-    projcet: roboshop
+    project: roboshop
     tier: app
 spec:
   replicas: 1
   selector:
     matchLabels:
       component: cart
-      projcet: roboshop
+      project: roboshop
       tier: app
-template:
-  metadata:
-    labels:
-      component: cart
-      projcet: roboshop
-      tier: app
-  spec:
-    containers:
-      - name: cart
-        image: vinodkumar9618/cart:v1
-        envFrom:
-          - configMapRef:
-              name: cart
-
+  template:
+    metadata:
+      labels:
+        component: cart
+        project: roboshop
+        tier: app
+    spec:
+      containers:
+        - name: cart
+          image: vinodkumar9618/cart:v1
+          envFrom:
+            - configMapRef:
+                name: cart
 ---
 apiVersion: v1
 kind: Service
