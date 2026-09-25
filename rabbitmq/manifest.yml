@@ -37,8 +37,7 @@ spec:
         projcet: roboshop
         tier: database
     spec:
-      selector:
-        container:
+        containers:
           - name: rabbitmq
             image: rabbitmq:3
             envFrom:
