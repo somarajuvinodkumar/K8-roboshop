@@ -39,7 +39,7 @@ metadata:
 spec:
   selector:
     component: mongodb
-    projcet: roboshop
+    project: roboshop
     tier: database
   ports:
     - protocol: TCP
