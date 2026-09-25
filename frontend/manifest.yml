@@ -102,10 +102,10 @@ spec:
         - name: frontend
           image: vinodkumar9618/frontend:v1
           volumeMounts:
-        - name: nginx-conf
-          mountPath: /etc/nginx/nginx.conf
-          subPath: nginx.conf
-          readOnly: true
+          - name: nginx-conf
+            mountPath: /etc/nginx/nginx.conf
+            subPath: nginx.conf
+            readOnly: true
       volumes:
         - name: nginx-conf
           configMap:
