@@ -6,7 +6,7 @@ metadata:
   namespace: roboshop
   labels:
     component: payment
-    projcet: roboshop
+    project: roboshop
     tier: app
 data:
   CART_HOST: cart
