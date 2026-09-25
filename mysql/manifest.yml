@@ -10,7 +10,7 @@ metadata:
     tier: database
 type: Opaque
 data:
-  MYSQL_ROOT_PASSWORD: "Um9ib1Nob3BAMQ==""
+  MYSQL_ROOT_PASSWORD: "Um9ib1Nob3BAMQ=="
 
 ---
 apiVersion: apps/v1
